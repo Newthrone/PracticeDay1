@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <!-- <form class="popup_form" id="popup_form" action="http://gemrussia.scaph.ru/api/request/feedback/add" _lpchecked="1">
+    <div class="popup_error-message">Что-то пошло не так. Попробуйте отправить отзыв снова.</div>
+    <h1 class="popup_caption">Задать вопрос</h1>
+    <fieldset class="popup_fieldset">
+      <input id="token" type="hidden" name="_token" value="3LBtzlKhn6VVJpEUsHHVxBFCbKKaJUDZMt4S7QNd">
+      <legend class="popup_legend">Личная информация</legend>
+      <div class="popup_block">                       
+        <div class="popup_fieldholders popup_corps_field">
+          <label for="corps_field" class="popup_field-label">Корпус:</label>
+          <select class="popup_fields popup_select" id="corps_field" name="corps_field">
+            <option value="3">Космос</option>
+            <option value="2">Приморский</option>
+            <option value="6">Сокол</option>
+            <option value="4">Солнечный</option>
+          </select>
+        </div>
+        <div class="popup_fieldholders popup_tour_field">
+          <label for="tour_field" class="popup_field-label">Смена:</label>
+          <select class="popup_fields popup_select" id="tour_field" name="tour_field">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="popup_fieldset">
+      <legend class="popup_legend">Сообщение</legend>
+      <div class="popup_block">
+        <textarea class="popup_fields popup_message_field" rows="3" name="message_field" placeholder="Текст" required=""></textarea>
+      </div>
+    </fieldset>
+    <fieldset class="popup_fieldset">
+      <legend class="popup_legend">Файл</legend>
+      <div class="popup_block">
+        <input class="popup_file_field" type="file" id="file" name="file_field">
+        <label for="file" class="popup_file_label" id="popup_file-label">
+          <svg class="popup_file_label_svg">
+            <use xlink:href="#spt-clip"></use>
+          </svg>
+          Прикрепить файл
+        </label>
+        <span class="popup_file_text">Файл не должен превышать 5 Мб</span>
+        <a href="#" class="file_field-refresh file_field-refresh-is-hide">Сбросить поле</a>
+      </div>
+    </fieldset>
+    <input type="checkbox" id="popup_agreement" class="popup_agreement_check" name="agreement" required="">
+    <label for="popup_agreement" class="popup_agreement_label">
+      Я согласен с условиями <a href="#" class="popup_link">договора-оферты</a>
+    </label>
+    <input id="contactType" type="hidden" name="form_type" value="feedback">
+    <button type="submit" class="popup_submitbtn" disabled="disabled" name="submit_btn" data-text="Отправить">
+      <span class="popup_preload popup_preload-left"></span>
+      <span class="popup_preload popup_preload-right"></span>
+    </button>
+    <svg class="popup-icon-top">
+      <use xlink:href="#ico-sokol"></use>
+    </svg>
+    <svg class="popup-icon-middle">
+      <circle cx="35" cy="15" r="15" fill="#8423A3"></circle>
+      <g transform="translate(0, 160)">
+        <use xlink:href="#ico-gem"></use>
+      </g>
+    </svg>
+  </form> -->
+    <h1>Введите личные данные</h1>
+    <form action="" class="">
+        <fieldset>
+            <legend>Личная информация</legend>
+            <label for="arendatorsName" class="formLabel">Имя<sup>*</sup></label>
+            <input id="arendatorsName" name="contact_name" class="formField js-field-has-error" type="name" required>
+            <label for="arendatorsPhone" class="formLabel">Номер телефон<sup>*</sup></label>
+            <input id="arendatorsPhone" name="contact_phone" class="formField" type="tel" required>
+            <label for="arendatorsEmail" class="formLabel">Email<sup>*</sup></label>
+            <input id="arendatorsEmail" name="contact_email" class="formField" type="email" required>
+            <label for="city" class="formLabel">Выберите город</label>
+            <select name="city" class="formSelect" type="city">
+                <option value="Москва">Москва</option>
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+                <option value="Краснодар">Краснодар</option>
+                <option value="Владивосток">Владивосток</option>
+                <option value="Курск">Курск</option>
+                <option value="Калининград">Калининград</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Информация о семье</legend>
+            <div>Семейное положение</div>
+            <label for="beMarried">Состою в браке</label>
+            <input id="beMarried" name="familyStatus" type="radio">
+            <label for="notMarried">Не состою в браке</label>
+            <input id="notMarried" name="familyStatus" type="radio">
+
+            <div>Дети</div>
+            <label for="haveKids">Есть дети</label>
+            <input id="haveKids" name="childrens" type="radio">
+            <label for="noKids">Нет детей</label>
+            <input id="noKids" name="childrens" type="radio">
+        </fieldset>
+        <fieldset>
+          <legend>Дополнительная информация</legend>
+          <div>Выберите интересные для вас темы</div>
+          <label for="interestsMusic">Музыка</label>
+          <input type="checkbox" name="interestsMusic" id="interestsMusic">
+          <label for="interestsCinema">Кино</label>
+          <input type="checkbox" name="interestsCinema" id="interestsCinema">
+          <label for="interestsSport">Спорт</label>
+          <input type="checkbox" name="interestsSport" id="interestsSport">
+          <label for="interestsPolitic">Политика</label>
+          <input type="checkbox" name="interestsPolitic" id="interestsPolitic">
+          <label for="interestsAnimal">Животные</label>
+          <input type="checkbox" name="interestsAnimal" id="interestsAnimal">
+          <label for="interestsFood">Еда</label>
+          <input type="checkbox" name="interestsFood" id="interestsFood">
+        </fieldset> 
+        <input type="submit" value="Отправить">
+    </form>
+    <!-- <form class="form" method="post" id="ajax_form" action="action_page.php">
+        <fieldset>
+            <legend>Написать нам</legend>
+
+            <input id="name" type="text" name="name" placeholder="Имя" title="Пожалуйста, введите ваше имя" required />
+
+            <input id="surname" type="text" name="surname" placeholder="Фамилия" title="Пожалуйста, введите вашу фамилию"
+                required />
+
+
+            <input id="email" type="email" name="email" placeholder="username@domain.tld" title="Пожалуйста, введите ваш e-mail"
+                required />
+
+            <input id="phonenumber" type="text" name="phonenumber" placeholder="Телефон 7__________" pattern="7[0-9]{10}"
+                title="Пожалуйста, введите ваш номер телефона начиная с цифры 7" required />
+
+            <textarea name="description" id="" wrap=hard cols="56" rows="10" minlength="10" placeholder="Текст сообщения"
+                required></textarea>
+            <p class="remark">Все поля должны быть заполнены</p>
+            <input class="btn" type="submit" id="btn" value="Отправить" />
+        </fieldset>
+    </form> -->
+</body>
+
+</html>
