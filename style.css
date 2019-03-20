@@ -526,6 +526,7 @@ body {
   width: 500px;
   margin: 20px auto;
   padding: 20px;
+  color:#6c7258;
   background-color: #f1f7ee;
 }
 
@@ -534,11 +535,12 @@ body {
 }
 
 .formGroup {
+  margin: 20px 0;
   border: none;
 }
 
 .formFieldsetTitle {
-  margin: 10px 0;
+  margin: 20px 0;
   font-size: 22px;
 }
 
@@ -549,7 +551,11 @@ body {
 
 .formField {
   padding: 10px 20px;
-  border-color: #b0bea9;
+  border: 2px solid #b0bea9;
+}
+
+.formField:focus {
+  outline-color: #617457;
 }
 
 .formField:valid {
@@ -568,5 +574,104 @@ body {
 .formSelect {
   width: 100%;
   padding: 10px 20px;
-  border-color: #b0bea9;
+  color:#6c7258;
+  font-size: 16px;
+  border: 2px solid #b0bea9;
+}
+
+.formSelect:focus {
+  outline-color: #617457;
+}
+
+.formText {
+  margin: 0 0 15px;
+}
+
+.formText-theNextBlock {
+  margin: 25px 0 15px;
+}
+
+
+.formInputHidden {
+  position: absolute;
+  transform: translateX(-9999px);
+  opacity:0;
+}
+
+.formLabelRadio {
+  position: relative;
+  display: block;
+  padding: 0 0 0 25px;
+}
+
+.formLabelRadio:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #b0bea9;
+  border-radius: 50%;
+}
+
+.formInputHidden:focus+.formLabelRadio:before {
+  box-shadow: 0px 0px 2px 0 #617457;
+}
+
+.formInputHidden:checked+.formLabelRadio:before {
+  box-shadow: inset 0 0 0px 4px #f1f7ee,
+              inset 0px 0px 0px 10px #b0bea9;
+}
+
+.formLabelCheckbox {
+  position: relative;
+  display: inline-block;
+  width: 40%;
+  margin: 10px 0;
+  padding: 0 0 0 25px;
+}
+
+.formLabelCheckbox:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #b0bea9;
+}
+
+.formInputHidden:focus + .formLabelCheckbox:before {
+  box-shadow: 0px 0px 2px 0 #617457;
+}
+
+.formInputHidden:checked + .formLabelCheckbox:before {
+  box-shadow: inset 0 0 0px 4px #f1f7ee,
+         inset 0px 0px 0px 10px #b0bea9;
+}
+
+.formSubmit {
+  display: block;
+  margin: 0 auto;
+  color: #617457;
+  background-color: #b0bea9;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.formSubmit:hover {
+  background-color: #94a78a;
+}
+
+.formSubmit:active {
+  background-color: #94a78a;
+  -webkit-box-shadow: 0 3px 5px 2px hsl(99, 14%, 30%) inset;
+  box-shadow: 0 3px 5px 2px hsl(99, 14%, 30%) inset;
+  border-color: #94a78a;
+}
+
+.formSubmit:focus {
+  outline-color: #617457;
 }
