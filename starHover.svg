@@ -1,0 +1,11 @@
+<svg width="200" height="300" class="svg">
+  <mask class="starHover" id="mask-star" stroke="#ff35fb" stroke-width="5" stroke-linejoin="round" >
+    <path d="M50,3 64,40 97,40 71,62 80,97 50,77 20,97 29,62 3,40 36,40z"/>
+  </mask>
+  <symbol id="rect">
+        <rect id="rect" y="0" width="100%" height="100%" fill="crimson" />
+  </symbol>
+  <g mask="url(#mask-star)">
+    <use xlink:href="#rect"></use>
+  </g>
+</svg>
