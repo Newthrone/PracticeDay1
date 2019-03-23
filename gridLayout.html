@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="/index.html">На главную</a>
+
+    <div class="gridContainer">
+      <div class="intro">
+        <h1>Introduction</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+          delectus, in eaque debitis, ullam nam quisquam rem molestias quos
+          soluta sit, asperiores amet? Modi vel blanditiis temporibus explicabo,
+          repellat adipisci cupiditate eius itaque a quod doloribus qui corporis
+          animi placeat, aut tempora laboriosam dolore iusto culpa consequuntur.
+          Animi, soluta totam?
+        </p>
+      </div>
+
+      <div class="sidebar">
+        <div>
+          <h2>Actions</h2>
+          <ul>
+            <li><a href="#1">Do a thing</a></li>
+            <li><a href="#1">Register your bad self</a></li>
+            <li><a href="#1">Hold the phone</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Related Stuff</h2>
+          <ul>
+            <li><a href="#1">Just a link</a></li>
+            <li><a href="#1">Another link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="moreInfo">
+        <h2>Additional Information</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum
+          vero provident repudiandae laboriosam, quae inventore sed vitae, quos
+          praesentium soluta quidem voluptatum aliquid minus aperiam suscipit
+          alias pariatur magnam. Accusamus laborum, repudiandae ab provident
+          libero aspernatur ullam dolor maxime quis exercitationem dignissimos
+          veritatis laboriosam, soluta voluptatem nostrum in molestias, nemo vel
+          architecto? Sed sapiente nostrum labore sit, ducimus ullam. Quas harum
+          ducimus qui doloribus quia magnam iusto a! Pariatur necessitatibus
+          unde, laborum hic, sapiente odio illo porro veniam, saepe doloribus
+          corporis tempora quis! Possimus nihil rem eum perspiciatis eius.
+        </p>
+      </div>
+    </div>
+    <style>
+      .gridContainer {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "intro"
+          "sidebar"
+          "moreinfo";
+        grid-auto-flow: row;
+        grid-column-gap: 1vw;
+        padding: 0 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: #9ae1eb;
+      }
+
+      .intro {
+        grid-area: intro;
+        border: 1px dashed #555;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        display: grid;
+        border: 1px dashed #555;
+      }
+
+      .moreInfo {
+        grid-area: moreinfo;
+        border: 1px dashed #555;
+      }
+
+      @media (min-width: 500px) {
+        .sidebar {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (min-width: 980px) {
+        .gridContainer {
+          grid-template-areas:
+            "intro sidebar"
+            "moreinfo sidebar";
+        }
+        .sidebar {
+          grid-template-columns: auto;
+          grid-template-rows: min-content;
+          padding: 0 20px 0 0;
+        }
+      }
+
+      /* .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
+        grid-auto-flow: column;
+        grid-column-gap: 1vw;
+        padding: 0 20px;
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: #9ae1eb;
+      }
+
+      .intro {
+        grid-column: 1;
+        border: 1px dashed #555;
+      }
+
+      .sidebar {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 640px));
+        grid-column: span 2;
+        grid-auto-flow: dense;
+        border: 1px dashed #555;
+      }
+
+      .moreInfo {
+        grid-column: 1;
+        border: 1px dashed #555;
+      } */
+    </style>
+  </body>
+</html>

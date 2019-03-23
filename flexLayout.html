@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <a href="/index.html">На главную</a>
+  <main>
+    
+    <section class="flexContainer flexContainerLeft">
+      <img class="imageItem"
+        src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-01.png">
+      <img class="imageItem"
+        src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-03.png">
+      <img class="imageItem"
+        src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-02.png">
+      <img class="imageItem"
+        src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-04.png">
+      <img class="imageItem"
+        src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-01.png">
+    </section>
+
+
+    <section class="flexContainer flexContainerRight">
+      <figure class="imageItem">
+        <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-01.png" class="imgNested">
+      </figure>
+      <figure class="imageItem">
+        <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-03.png" class="imgNested">
+      </figure>
+      <figure class="imageItem">
+        <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-02.png" class="imgNested">
+      </figure>
+      <figure class="imageItem">
+        <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-04.png" class="imgNested">
+      </figure>
+      <figure class="imageItem">
+        <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-01.png" class="imgNested">
+      </figure>
+    </section>
+  </main>
+  <style>
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1366px;
+      margin: 0 auto;
+    }
+
+    .flexContainer {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 10px 0px;
+      background: #02536b;
+      font-size: 0;
+    }
+
+    .flexContainerLeft {
+      display: none;
+    }
+
+    .flexContainerRight {
+
+    }
+
+    .flexContainerLeft .imageItem {
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 33%;
+      height: auto;
+    }
+
+    .flexContainerRight .imageItem{
+      flex: auto;
+      width: 400px;
+      margin: 10px;
+    }
+
+    .imgNested {
+      width: 100%;
+      height: auto;
+    }
+
+    .article-image.is-3by2 {
+      padding-top: 66.6666%;
+    }
+
+    .article-image.is-16by9 {
+      padding-top: 56.25%;
+    }
+  </style>
+</body>
+
+</html>
