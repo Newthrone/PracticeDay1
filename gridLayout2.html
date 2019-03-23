@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="/index.html">На главную</a>
+
+    <div class="gridContainer">
+      <div class="intro border">
+        <h1>Introduction</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+          delectus, in eaque debitis, ullam nam quisquam rem molestias quos
+          soluta sit, asperiores amet? Modi vel blanditiis temporibus explicabo,
+          repellat adipisci cupiditate eius itaque a quod doloribus qui corporis
+          animi placeat, aut tempora laboriosam dolore iusto culpa consequuntur.
+          Animi, soluta totam?
+        </p>
+      </div>
+
+      <div class="sidebar border">
+        <div class="border">
+          <h2>Actions</h2>
+          <ul>
+            <li><a href="#1">Do a thing</a></li>
+            <li><a href="#1">Register your bad self</a></li>
+            <li><a href="#1">Hold the phone</a></li>
+          </ul>
+        </div>
+        <div  class="border">
+          <h2>Related Stuff</h2>
+          <ul>
+            <li><a href="#1">Just a link</a></li>
+            <li><a href="#1">Another link</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="moreInfo border">
+        <h2>Additional Information</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum
+          vero provident repudiandae laboriosam, quae inventore sed vitae, quos
+          praesentium soluta quidem voluptatum aliquid minus aperiam suscipit
+          alias pariatur magnam. Accusamus laborum, repudiandae ab provident
+          libero aspernatur ullam dolor maxime quis exercitationem dignissimos
+          veritatis laboriosam, soluta voluptatem nostrum in molestias, nemo vel
+          architecto? Sed sapiente nostrum labore sit, ducimus ullam. Quas harum
+          ducimus qui doloribus quia magnam iusto a! Pariatur necessitatibus
+          unde, laborum hic, sapiente odio illo porro veniam, saepe doloribus
+          corporis tempora quis! Possimus nihil rem eum perspiciatis eius.
+        </p>
+      </div>
+    </div>
+    <style>
+      body {
+        margin: 0;
+        padding: 10px;
+      }
+      .border {
+        border: 1px dashed #555;
+      }
+
+      .gridContainer {
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
+        grid-template-rows: min-content; 
+        grid-column-gap: 1vw;
+        padding: 0 20px;
+        margin: 0 auto;
+        max-width: 1366px;
+        background-color: #9ae1eb;
+      }
+
+      .intro {
+        grid-column: 1;
+      }
+
+      .sidebar {
+        grid-row: span 2;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: min-content;
+      }
+
+      .moreInfo {
+        grid-column: 1;
+      }
+
+      @media (min-width: 652px) and (max-width:980px) {
+        .gridContainer {
+          grid-template-columns: repeat(auto-fit, minmax(600px, max-content));
+        }
+      }
+
+    </style>
+  </body>
+</html>
