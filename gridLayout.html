@@ -10,7 +10,7 @@
     <a href="/index.html">На главную</a>
 
     <div class="gridContainer">
-      <div class="intro">
+      <div class="intro border">
         <h1>Introduction</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
@@ -22,8 +22,8 @@
         </p>
       </div>
 
-      <div class="sidebar">
-        <div>
+      <div class="sidebar border">
+        <div class="border">
           <h2>Actions</h2>
           <ul>
             <li><a href="#1">Do a thing</a></li>
@@ -31,7 +31,7 @@
             <li><a href="#1">Hold the phone</a></li>
           </ul>
         </div>
-        <div>
+        <div  class="border">
           <h2>Related Stuff</h2>
           <ul>
             <li><a href="#1">Just a link</a></li>
@@ -40,7 +40,7 @@
         </div>
       </div>
 
-      <div class="moreInfo">
+      <div class="moreInfo border">
         <h2>Additional Information</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nostrum
@@ -57,7 +57,15 @@
       </div>
     </div>
     <style>
-      .gridContainer {
+      body {
+        margin: 0;
+        padding: 10px;
+      }
+      .border {
+        border: 1px dashed #555;
+      }
+
+      /* .gridContainer {
         display: grid; 
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -74,18 +82,15 @@
 
       .intro {
         grid-area: intro;
-        border: 1px dashed #555;
       }
 
       .sidebar {
         grid-area: sidebar;
         display: grid;
-        border: 1px dashed #555;
       }
 
       .moreInfo {
         grid-area: moreinfo;
-        border: 1px dashed #555;
       }
 
       @media (min-width: 500px) {
@@ -105,36 +110,27 @@
           grid-template-rows: min-content;
           padding: 0 20px 0 0;
         }
+      } */
+      * {
+        box-sizing: border-box;
       }
 
-      /* .gridContainer {
+      .gridContainer {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
-        grid-auto-flow: column;
-        grid-column-gap: 1vw;
-        padding: 0 20px;
+        grid-template-columns: repeat(auto-fit, minmax(600px, max-content));
+        grid-template-rows: min-content;        
+        grid-column-gap: 20px;
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 1366px;
         background-color: #9ae1eb;
-      }
-
-      .intro {
-        grid-column: 1;
-        border: 1px dashed #555;
       }
 
       .sidebar {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 640px));
-        grid-column: span 2;
-        grid-auto-flow: dense;
-        border: 1px dashed #555;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: min-content;
+        grid-row: span 2;
       }
-
-      .moreInfo {
-        grid-column: 1;
-        border: 1px dashed #555;
-      } */
     </style>
   </body>
 </html>
