@@ -6,25 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="styleForMinimo.css">
 </head>
 
 <body>
 
-  <header>
-    <a href="#" class="disabled">MINIMO</a>
-    <nav>
-      <ul>
-        <li><a href="#">lifestyle</a></li>
-        <li><a href="#">photodiary</a></li>
-        <li><a href="#">music</a></li>
-        <li><a href="#">travel</a></li>
+  <header class="header">
+    <a href="/index.html" title="на главную">MINIMO</a>
+    <nav class="menu">
+      <ul class="menuListLinks">
+        <li class="menuLink"><a href="#">lifestyle</a></li>
+        <li class="menuLink"><a href="#">photodiary</a></li>
+        <li class="menuLink"><a href="#">music</a></li>
+        <li class="menuLink"><a href="#">travel</a></li>
       </ul>
     </nav>
-    <img src="https://loremflickr.com/1068/600/girl" width="1068" height="auto" alt="girl">
+    <img src="https://loremflickr.com/1068/600/girl" class="pageHero" alt="girl">
   </header>
-  <article>
-    <div>photodiary</div>
+  <article class="article">
     <h1>The perfect weekend getaway</h1>
+    <div class="articleStyle">photodiary</div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eius adipisci animi error quaerat ratione
       quibusdam laborum sit consequatur minus ea magnam veritatis, earum et tempora facere facilis? Tenetur, aliquid!
       Eius dignissimos optio provident quam quaerat? Pariatur unde odio quam. Ad repudiandae fugiat sunt quos, debitis,
@@ -90,17 +91,17 @@
       Eos repellat rerum nihil similique veniam, laborum ex quo nam distinctio fuga perspiciatis recusandae quos fugiat
       ducimus, quidem, reiciendis adipisci? Dicta illum repellat explicabo non accusamus nihil dolore perspiciatis iure!
     </p>
-    <div>
-      <a href="#">fb</a>
-      <a href="#">tw</a>
-      <a href="#">g+</a>
-      <a href="#">tumb</a>
-      <a href="#">pint</a>
+    <div class="socialLinks">
+      <a href="#" class="socialLink">fb</a>
+      <a href="#" class="socialLink">tw</a>
+      <a href="#" class="socialLink">g+</a>
+      <a href="#" class="socialLink">tumb</a>
+      <a href="#" class="socialLink">pint</a>
     </div>
   </article>
-  <aside>
+  <aside class="sideBar">
     <section>
-      <img src="https://loremflickr.com/275/200/girl" width="275" height="auto" alt="I">
+      <img src="https://loremflickr.com/275/200/girl" width="100%" height="auto" alt="I">
       <h2>About me</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis nihil necessitatibus illo tempora
         qui molestiae, deleniti, blanditiis veniam sapiente natus delectus quas cumque temporibus velit minima, tempore
@@ -111,37 +112,44 @@
       <a href="#">inst</a>
       <a href="#">pint</a>
     </section>
-    <section>
       <h3>top posts</h3>
       <ul>
         <li>
-          <a href="#">A day exploring the Alps</a>
-          <a href="#">24 comments</a>
+          <a class="topPostLink" href="#">A day exploring the Alps</a>
+          <a class="topPostCommentLink"  href="#">24 comments</a>
         </li>
         <li>
-          <a href="#">American dream</a>
-          <a href="#">19 comments</a>
+          <a class="topPostLink"  href="#">American dream</a>
+          <a class="topPostCommentLin"  href="#">19 comments</a>
         </li>
         <li>
-          <a href="#">Cold winter days</a>
-          <a href="#">15 comments</a>
+          <a class="topPostLink"  href="#">Cold winter days</a>
+          <a class="topPostCommentLin"  href="#">15 comments</a>
         </li>
       </ul>
-    </section>
     <a href="#"><img src="https://loremflickr.com/250/250" alt="banner"></a>
   </aside>
 
-    <div>you may also like</div>
-    <a href="#"><img src="https://loremflickr.com/270/180?random=1" width="270" height="180" alt=""></a>
-    <a href="#">Cold winter days</a>
-    <a href="#"><img src="https://loremflickr.com/270/180?random=2" width="270" height="180" alt=""></a>
-    <a href="#">A day exploring the Alps</a>
-    <a href="#"><img src="https://loremflickr.com/270/180?random=3" width="270" height="180" alt=""></a>
-    <a href="#">American dream</a>
+  <div class="articlesListLinks">
+    <div class="articlesListLinksText">you may also like</div>
+    <a href="#">
+      <img src="https://loremflickr.com/270/180?random=1" width="270" height="auto" alt="">
+      <div>Cold winter days</div>
+    </a>
+    <a href="#">
+      <img src="https://loremflickr.com/270/180?random=2" width="270" height="auto" alt="">
+      <div>A day exploring the Alps</div>
+    </a>
+    <a href="#">
+      <img src="https://loremflickr.com/270/180?random=3" width="270" height="auto" alt="">
+      <div>American dream</div>
+    </a>    
+  </div>
+
   <div>2 comments</div>
   <ul>
     <li>
-      <img src="https://loremflickr.com/30/30?random=1" alt="" style="border-radius: 50%">
+      <img src="https://loremflickr.com/40/40?random=1" alt="" style="border-radius: 50%">
       <h3>John Doe</h3>
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi maxime aut omnis, exercitationem
         ducimus quam corporis nam excepturi est labore minus alias fuga quidem illum iusto aliquid, incidunt
@@ -151,7 +159,7 @@
       <a href="#">reply</a>
     </li>
     <li>
-      <img src="https://loremflickr.com/30/30?random=2" alt="" style="border-radius: 50%">
+      <img src="https://loremflickr.com/40/40?random=2" alt="" style="border-radius: 50%">
       <h3>John Doe</h3>
       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eligendi maxime aut omnis, exercitationem
         ducimus quam corporis nam excepturi est labore minus alias fuga quidem illum iusto aliquid, incidunt
@@ -161,30 +169,28 @@
       <a href="#">reply</a>
     </li>
   </ul>
-  <div>
-    <img src="https://loremflickr.com/30/30?random=2" alt="" style="border-radius: 50%">
-    <form action="#">
-      <textarea name="reply" cols="30" rows="10" placeholder="join the discussion">
+  <div class="commentBlock">
+    <img src="https://loremflickr.com/40/40?random=3" class="commentBlockAva" alt="">
+    <form action="#" class="commentForm">
+      <textarea class="commentField" name="reply" placeholder="join the discussion">
                 </textarea>
-      <input type="submit" style="visibility: hidden">
+      <input type="submit" class="commentSubmit">
     </form>
-    <span>connected with</span>
-    <a href="#">tw</a>
-    <a href="#">fb</a>
   </div>
-
-  <footer>
-    <a href="#">terms and conditions</a>
-    <a href="#">privacy</a>
-    <span>follow</span>
-    <a href="#">fb</a>
-    <a href="#">tw</a>
-    <a href="#">inst</a>
+  <div class="logInBlock">
+    <span class="logInText">connected with</span>
+    <a class="logInLinkTw" href="#">tw</a>
+    <a class="logInLinkFb" href="#">fb</a>
+  </div>
+  <footer class="footer">
+    <a class="footerLink" href="#">terms and conditions</a>
+    <a class="footerLink" href="#">privacy</a>
+    <span class="footerPreSocial">follow</span>
+    <a class="footerLink" href="#">fb</a>
+    <a class="footerLink" href="#">tw</a>
+    <a class="footerLink" href="#">inst</a>
   </footer>
   <style>
-    .disabled {
-      cursor: default;
-    }
   </style>
 </body>
 

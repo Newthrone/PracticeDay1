@@ -1,0 +1,26 @@
+.grids {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-gap: 1rem;
+}
+
+.gridsHeader {
+  grid-column: 1 / -1;
+}
+
+.gridsNav {
+  grid-column: 1 / -1;
+  
+}
+
+.gridsMain {
+  grid-column: span 7;
+}
+
+.gridsAside {
+  grid-column: span 4;
+}
+
+.gridsFooter {
+  grid-column: 1 / -1;
+}

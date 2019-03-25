@@ -1,19 +1,21 @@
+.columnNav {
+  margin: 1rem 0 0;
+}
+
 .columns {
   column-count: 2;
-  column-fill: auto;
 }
 
 .columnMain {
+  width: 150%;
   margin: 1rem 0;
-  column-span: 3;
   break-inside: avoid;
   break-after: column;
 }
 
-.columnArticle {
-}
-
 .columnAside {
-  margin: 1rem 0 -3rem;
+  width: 50%;
+  transform: translateX(100%);
+  margin: 1rem 0 0;
   break-inside: avoid;
 }

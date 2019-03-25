@@ -1,12 +1,29 @@
+
+
 .flexboxes {
   display: flex;
-  flex-flow: column;
+  flex-flow: wrap;
+}
+
+.flexboxesHeader {
+  flex: 100%;
+}
+
+.flexboxesNav {
+  flex: 100%;
+  margin: 1rem 0;
 }
 
 .flexboxesMain {
-  align-self: flex-start;
+  flex: 70%;
+  margin-right:  1rem;
 }
 
 .flexboxesAside {
-  align-self: flex-end;
+  flex: 0 26%; 
+}
+
+.flexboxesFooter {
+  flex: 100%;
+  margin: 1rem 0 0;
 }
