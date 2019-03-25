@@ -1,0 +1,12 @@
+.flexboxes {
+  display: flex;
+  flex-flow: column;
+}
+
+.flexboxesMain {
+  align-self: flex-start;
+}
+
+.flexboxesAside {
+  align-self: flex-end;
+}

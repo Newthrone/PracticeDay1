@@ -1,0 +1,19 @@
+.columns {
+  column-count: 2;
+  column-fill: auto;
+}
+
+.columnMain {
+  margin: 1rem 0;
+  column-span: 3;
+  break-inside: avoid;
+  break-after: column;
+}
+
+.columnArticle {
+}
+
+.columnAside {
+  margin: 1rem 0 -3rem;
+  break-inside: avoid;
+}

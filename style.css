@@ -1,0 +1,46 @@
+.back {
+  color: yellow;
+}
+
+body {
+  padding: 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: darkslateblue;
+}
+
+body * {
+  text-align: center;
+}
+
+header {
+  padding: 3rem;
+  background-color: silver;
+}
+
+nav {
+  padding: 1rem;
+  background-color: deeppink;
+}
+
+main {
+  padding: 1rem;
+  background-color: darkseagreen;
+}
+
+article {
+  padding: 3rem;
+  margin: 1rem 0 0;
+  background-color: darkcyan;
+}
+
+aside {
+  padding: 1rem;
+  background-color: cadetblue;
+}
+
+footer {
+  padding: 3rem;
+  background-color: chocolate;
+}
