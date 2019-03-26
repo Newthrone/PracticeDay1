@@ -46,12 +46,17 @@ li {
 
 .article {
   grid-column: 1;
-  position: relative;  
+  position: relative;
 }
 
 .articleStyle {
   position: absolute;
   top: -1.5rem;
+}
+
+.articleImg {
+  display: block;
+  margin: 1rem auto;
 }
 
 .socialLinks {
@@ -133,9 +138,9 @@ li {
 
 .footer {
   display: flex;
-  padding: 2rem 5rem; 
+  padding: 2rem 5rem;
   margin: 0 -5rem;
-  background-color: #ccc; 
+  background-color: #ccc;
 }
 
 .footerLink {
