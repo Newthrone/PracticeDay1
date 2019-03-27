@@ -5,10 +5,12 @@
 .mainPage {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
     grid-gap: 30px;
     max-width: 1086px;
     margin: 0 auto;
     font-size: 16px;
+    background-color: #aaa;
 }
 
 .mainPage > * {
@@ -27,9 +29,9 @@
 }
 
 .pageHero {
-    flex: 1 1 100%;
-    object-fit: contain;
+    width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 .pageRubric {
@@ -73,16 +75,74 @@
 }
 
 .card {
+    grid-column: span 1;
     position: relative;
+    min-height: 420px;
+    padding: 0 35px 70px;
+    border-radius: 4px;    
 }
 
-.cardPos2-2{
-    grid-column: 2 / -1
+.cardWideWithoutImg {
+    grid-column: span 2;
+    padding: 110px 290px 70px 35px;
+    background: url("/image/chinaMan.png") no-repeat 100% 50%;
 }
 
-.cardRubric {
-    position: absolute;
+.cardNarrowWithoutImg {
+    padding: 30px 35px 70px;
+    text-align: center;
+}
+
+.cardNarrowBackgroundImg {
+    padding: 180px 35px 70px;
+    background-image: url("/image/homeInJungle.jpg");
+}
+
+.cardImage {
+    margin: 0 -35px;
+}
+
+.cardRubric {     
     top: 30px;
     left: 35px;
+    display: inline-block;
+    padding: 5px 10px;
     color: #fff;
+    background-color: coral;
+}
+
+.pa {
+    position: absolute;   
+}
+
+.cardFooterLink {
+    position: absolute;    
+    bottom: 15px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    border: 1px solid #222;
+}
+
+.cardFooterLink-more { 
+    left: 35px;   
+    width: 140px;    
+    border-radius: 15px;    
+}
+
+.cardFooterLink-comment {
+    left: 190px; 
+    width: 75px;    
+    border-radius: 15px;
+}
+
+.cardFooterLink-like {
+    left: 280px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.cardNewest {
+    grid-column: span 2;
 }
