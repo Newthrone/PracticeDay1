@@ -28,51 +28,45 @@ friends = {
   dismissal: function(friend) {return delete this[friend].job},
   haveChild: function() {
     let haveChild = [];
-    // for (key in this)
+    for (key in this) {
+      if(this[key].children) haveChild.push(key);
+    }
+    return haveChild;
+  },
+  isMarried: function() {
+    let married = [];
+    for (key in this) {
+      if(this[key].spouse) married.push(key);
+    }
+    return married;
+  },
+  working: function() {
+    let isWorking = [];
+    for (key in this) {
+      if(this[key].job) isWorking.push(key);
+    }
+    return isWorking;
   }
-}
+};
+
+Object.defineProperty(friends, "marriage", {enumerable: false});
+Object.defineProperty(friends, "divorce", {enumerable: false});
+Object.defineProperty(friends, "childbirth", {enumerable: false});
+Object.defineProperty(friends, "employment", {enumerable: false});
+Object.defineProperty(friends, "dismissal", {enumerable: false});
+Object.defineProperty(friends, "haveChild", {enumerable: false});
 
 
 friends.childbirth('Kate', 'Wendy');
 friends.childbirth('Kate', 'Barny');
 friends.childbirth('Kate', 'Bob');
+friends.childbirth('Anna', 'Dilan');
 friends.employment('Tom', 'Writer');
 friends.employment('Luke', 'Designer');
-console.log(friends);
 friends.dismissal('Luke');
+friends.marriage('Luke', 'Paris');
+friends.marriage('Luke', 'Paris');
 console.log(friends);
-
-// friends = {
-//   Kate : {
-//     spouse: ‘Mike’,
-//     children: [‘Sara’, ‘Sam’],
-//     job: ‘developer’,
-//   },
-//   Tom: {},
-//   Din: {},
-//   Anna: {},
-//   Luke: {}
-//   };
-
-// В модуле должны быть методы:
-// регистрация брака(добавляется запись о супруге) +
-// развод(убирается запись о супруге) +
-// рождение ребенка(добавляется запись о ребенке, несколько детей представляются в виде массива) +
-// устройство на работу(добавляется запись о профессии) +
-// увольнение(убирается запись о профессии) +
-// способ вывести список всех женатых
-// способ вывести всех с детьми
-// способ вывести всех с работой
-
-
-// function showProps(obj, objName) {
-//   var result = "";
-//   for (var i in obj) {
-//     if (obj.hasOwnProperty(i)) {
-//       result += objName + "." + i + " = " + obj[i] + "\n";
-//     }
-//   }
-//   return result;
-// }
-
-// console.log(showProps(friends, "friends"));
+console.log(friends.haveChild());
+console.log(friends.isMarried());
+console.log(friends.working());
