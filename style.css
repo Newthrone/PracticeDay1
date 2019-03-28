@@ -8,14 +8,14 @@
     background-color: #51ff00;
 }
 
-.icon { 
+.icon {
     position: relative;
     width: 40px;
     height: 80px;
     overflow: hidden;
     background-image: linear-gradient(to top, #fd3333 2px, transparent 2px, transparent 38px, #fd3333 38px, #fd3333 40px, #51ff00 40px,
-                       #51ff00 100%), 
-                      linear-gradient(to right, #fd3333 2px, transparent 2px, transparent 38px, #fd3333 38px);      
+                       #51ff00 100%),
+                      linear-gradient(to right, #fd3333 2px, transparent 2px, transparent 38px, #fd3333 38px);
 }
 
 .icon:before,
@@ -27,8 +27,8 @@
 }
 
 
-.arrowUp:before {   
-    left: 12px;    
+.arrowUp:before {
+    left: 12px;
     width: 16px;
     height: 16px;
     border-left: 2px solid #fd3333;
@@ -52,8 +52,8 @@
     transform: translateY(20px)
 }
 
-.arrowDown:before {   
-    left: 12px;    
+.arrowDown:before {
+    left: 12px;
     width: 16px;
     height: 16px;
     border-right: 2px solid #fd3333;
@@ -77,8 +77,8 @@
     transform: translateY(20px)
 }
 
-.menu:before {   
-    bottom: 7px; 
+.menu:before {
+    bottom: 7px;
     width: 20px;
     height: 10px;
     border-top: 2px solid #fd3333;
@@ -88,7 +88,7 @@
 }
 
 .menu:after {
-    bottom: 30px; 
+    bottom: 30px;
     height: 2px;
     width: 20px;
     background-color: #fd3333;
@@ -108,6 +108,21 @@
     /* transition: .5s linear; */
 }
 
+.rayCircle {
+  r: 0;
+  stroke-dasharray: 1 27;
+  stroke-width: 10;
+  transition:  .5s linear;
+}
+
+.svgOuter:hover .rayCircle {
+  r: 35;
+  stroke-dasharray: 1 27;
+  stroke-width: 10;
+}
+
+
+
 .svgInner {
     stroke: #fd3333;
     stroke-width: 40;
@@ -117,4 +132,8 @@
 
 .rayClass {
     transform: translate(10);
+}
+
+.test {
+  r: 10px;
 }
