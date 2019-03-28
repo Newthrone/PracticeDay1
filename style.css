@@ -109,31 +109,14 @@
 }
 
 .rayCircle {
-  r: 0;
-  stroke-dasharray: 1 27;
+  r: 30;
+  stroke-dasharray: 1 26;
   stroke-width: 10;
+  transform-origin: 50% 50%;
+  transform: scale(0);
   transition:  .5s linear;
 }
 
 .svgOuter:hover .rayCircle {
-  r: 35;
-  stroke-dasharray: 1 27;
-  stroke-width: 10;
-}
-
-
-
-.svgInner {
-    stroke: #fd3333;
-    stroke-width: 40;
-    /* stroke-dasharray: 2 1; */
-    fill: none;
-}
-
-.rayClass {
-    transform: translate(10);
-}
-
-.test {
-  r: 10px;
+  transform: scale(1);
 }
