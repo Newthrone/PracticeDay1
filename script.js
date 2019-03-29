@@ -65,7 +65,7 @@ friends.employment('Tom', 'Writer');
 friends.employment('Luke', 'Designer');
 friends.dismissal('Luke');
 friends.marriage('Luke', 'Paris');
-friends.marriage('Luke', 'Paris');
+/* friends.marriage('Julia', 'Alex');  - ошибка. свойства нет, и обработки ошибок нет*/
 console.log(friends);
 console.log(friends.haveChild());
 console.log(friends.isMarried());
