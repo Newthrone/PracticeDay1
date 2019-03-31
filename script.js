@@ -55,6 +55,8 @@ Object.defineProperty(friends, "childbirth", {enumerable: false});
 Object.defineProperty(friends, "employment", {enumerable: false});
 Object.defineProperty(friends, "dismissal", {enumerable: false});
 Object.defineProperty(friends, "haveChild", {enumerable: false});
+Object.defineProperty(friends, "isMarried", {enumerable: false});
+Object.defineProperty(friends, "working", {enumerable: false});
 
 
 friends.childbirth('Kate', 'Wendy');
