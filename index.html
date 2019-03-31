@@ -1,103 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="mainPage">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="mainPage">
     <header class="header">
-        <a href="#">Media</a>
-        <nav class="navigationLink">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#">Page</a>
-        </nav>
-        <img src="/image/pageHero.jpg" class="pageHero" width="1086px" height="auto" alt="male and panoramic views of the city">
-        <div class="pageRubric">lifestyle</div>
-        <h1 class="pageTitle">Things To Do Before You're 30</h1>
-        <div class="pageText">For many it means that you’re no longer in the hard-partying, bad decision-making stage of your life, for better or for worse.</div>
-        <a href="#" class="pageLinkMore">read more</a>
+      <a href="#">Media</a>
+      <nav class="navigationLinks">
+        <ul class="navigationLinksList">
+          <li class="navigationLinksItem">
+                <a href="#">Home</a>
+          </li>
+          <li class="navigationLinksItem">
+                <a href="#">About</a>
+          </li>
+          <li class="navigationLinksItem">
+                <a href="#">Contact</a>
+          </li>
+          <li class="navigationLinksItem">
+                <a href="#">Page</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <nav class="navigationsRubric">
-        <a href="#" class="rubricLink">
-            <div>lifestyle</div>
-            <h3>Things To Do Before You're 30</h3>
-        </a>
-        <a href="#" class="rubricLink">
+    <main>
+      <section class="pageHero">
+          <img src="image/pageHero.jpg" class="pageHeroImg" alt="male and panoramic views of the city"/>
+          <span class="pageRubric">lifestyle</span>
+          <h1 class="pageTitle">Things To Do Before You're 30</h1>
+          <p class="pageText">
+            For many it means that you’re no longer in the hard-partying, bad
+            decision-making stage of your life, for better or for worse.
+          </p>
+          <a href="#" class="pageLinkMore">read more</a>
+      </section>      
+      <ul class="rubricList">
+        <li class="rubricListItem">
+          <a href="#" class="rubricLink">
+          <div>lifestyle</div>
+          <h3>Things To Do Before You're 30</h3></a>
+        </li>
+        <li class="rubricListItem">
+            <a href="#" class="rubricLink">
             <div>science</div>
-            <h3>Value-Based Care‘s Data Problem</h3>
-        </a>
-        <a href="#" class="rubricLink">
-            <div>TECHNOLOGY</div>
-            <h3>How to Design for Virtual Reality</h3>
-        </a>
-        <a href="#" class="rubricLink">
-            <div>EDUCATION</div>
-            <h3>What I Will Fret Over</h3>
-        </a>
-    </nav>
-    <div class="card">
-        <img src="/image/mountainAndSea.jpg" class="cardImage" alt="mountain and sea">
-        <div class="cardRubric pa">country</div>
-        <h3 class="cardTitle">12 photos Indonesian beauty in your eyes</h3>
-        <div class="cardText">This is the reaction of many people is often asked when visiting a variety...</div>   
-        <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
-        <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
-        <a href="#" class="cardFooterLink cardFooterLink-like"></a>         
-    </div>
-    <div class="card cardWideWithoutImg">
-        <div class="cardRubric pa">people</div>
-        <h2 class="cardTitle">Ridwan Kamil role in Success Story Organizing Surabaya</h2>
-        <div class="cardText">Bandung many people skeptical and apathetic towards revamping the city of Bandung with all tangled Problems. Though if you want a little to learn from the neighboring town...</div>
-        <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
-        <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
-        <a href="#" class="cardFooterLink cardFooterLink-like"></a>  
-    </div>
-    <div class="card">
-        <img src="/image/manAndSky.jpg" class="cardImage" alt="mountain and sea">
-        <div class="cardRubric pa">country</div>
-        <h3 class="cardTitle">12 photos Indonesian beauty in your eyes</h3>
-        <div class="cardText">This is the reaction of many people is often asked when visiting a variety...</div>   
-        <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
-        <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
-        <a href="#" class="cardFooterLink cardFooterLink-like"></a>         
-    </div>
-    <div class="card">
-        <img src="/image/workTable.jpg" class="cardImage" alt="mountain and sea">
-        <div class="cardRubric pa">country</div>
-        <h3 class="cardTitle">12 photos Indonesian beauty in your eyes</h3>
-        <div class="cardText">This is the reaction of many people is often asked when visiting a variety...</div>   
-        <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
-        <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
-        <a href="#" class="cardFooterLink cardFooterLink-like"></a>         
-    </div>
-    <div class="card cardNarrowWithoutImg">        
-        <div class="cardRubric">country</div>
-        <h2 class="cardTitle">Four Pillars Decide Fate of Economy Indonesia</h2>
-        <div class="cardText">The domestic economy is still faced with a number of structural challenges. To achieve sustain...</div>   
-        <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
-        <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
-        <a href="#" class="cardFooterLink cardFooterLink-like"></a>        
-    </div>
-    <div class="card cardNarrowBackgroundImg">
-        <div class="cardRubric">country</div>
-        <h3 class="cardTitle">12 photos Indonesian beauty in your eyes</h3>
-        <div class="cardText">This is the reaction of many people is often asked when visiting a variety...</div>   
-        <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
-        <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
-        <a href="#" class="cardFooterLink cardFooterLink-like"></a>        
-    </div>
-    <div class="card cardNewest">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate aperiam, consequuntur accusamus harum nesciunt repudiandae vero nulla, reprehenderit adipisci, nam iure hic impedit ratione autem magnam. Quia, ab? Necessitatibus, sed.
-        Mollitia enim illo iste dolore nemo laudantium? Eveniet numquam, illo, velit magni doloremque esse nihil, impedit eaque harum accusamus aut officiis ducimus repellat? Perferendis non nesciunt et maxime dolorum deserunt.
-        Sapiente aperiam quidem eaque? Quibusdam odit quia, quisquam quos id cum nemo, quam voluptate deserunt consequuntur maxime. Accusantium, illo cupiditate. Facilis excepturi omnis porro quis repellat amet, repellendus corporis vel!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate aperiam, consequuntur accusamus harum nesciunt repudiandae vero nulla, reprehenderit adipisci, nam iure hic impedit ratione autem magnam. Quia, ab? Necessitatibus, sed.
-        Mollitia enim illo iste dolore nemo laudantium? Eveniet numquam, illo, velit magni doloremque esse nihil, impedit eaque harum accusamus aut officiis ducimus repellat? Perferendis non nesciunt et maxime dolorum deserunt.
-        Sapiente aperiam quidem eaque? Quibusdam odit quia, quisquam quos id cum nemo, quam voluptate deserunt consequuntur maxime. Accusantium, illo cupiditate. Facilis excepturi omnis porro quis repellat amet, repellendus corporis vel!</p>
-    </div>
-</body>
+            <h3>Value-Based Care‘s Data Problem</h3></a>
+        </li>
+        <li class="rubricListItem">
+            <a href="#" class="rubricLink">
+              <div>technology</div>
+              <h3>How to Design for Virtual Reality</h3></a>
+        </li>
+        <li class="rubricListItem">
+            <a href="#" class="rubricLink">
+              <div>education</div>
+              <h3>What I Will Fret Over</h3></a>
+        </li>
+      </ul>
+      <section class="listCard">        
+        <section class="card">
+          <h3 class="cardTitle">12 photos Indonesian beauty in your eyes</h3>
+          <img src="image/mountainAndSea.jpg" class="cardImage" alt="mountain and sea"/>
+          <span class="cardRubric pa">country</span>
+          <p class="cardText">
+            This is the reaction of many people is often asked when visiting a
+            variety...
+          </p>
+          <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
+          <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
+          <a href="#" class="cardFooterLink cardFooterLink-like"></a>
+        </section>
+        <section class="card cardWideWithoutImg">
+          <span class="cardRubric pa">people</span>
+          <h2 class="cardTitle">
+            Ridwan Kamil role in Success Story Organizing Surabaya
+          </h2>
+          <p class="cardText">
+            Bandung many people skeptical and apathetic towards revamping the city
+            of Bandung with all tangled Problems. Though if you want a little to
+            learn from the neighboring town...
+          </p>
+          <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
+          <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
+          <a href="#" class="cardFooterLink cardFooterLink-like"></a>
+        </section>
+        <section class="card">
+          <img
+            src="image/manAndSky.jpg" class="cardImage" alt="mountain and sea"/>
+          <span class="cardRubric pa">country</span>
+          <h3 class="cardTitle">12 photos Indonesian beauty in your eyes</h3>
+          <p class="cardText">
+            This is the reaction of many people is often asked when visiting a
+            variety...
+          </p>
+          <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
+          <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
+          <a href="#" class="cardFooterLink cardFooterLink-like"></a>
+        </section>
+        <section class="card">
+          <img
+            src="image/workTable.jpg"
+            class="cardImage"
+            alt="mountain and sea"
+          />
+          <span class="cardRubric pa">country</span>
+          <h3 class="cardTitle">12 photos Indonesian beauty in your eyes</h3>
+          <p class="cardText">
+            This is the reaction of many people is often asked when visiting a
+            variety...
+          </p>
+          <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
+          <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
+          <a href="#" class="cardFooterLink cardFooterLink-like"></a>
+        </section>
+        <section class="card cardNarrowWithoutImg">
+          <span class="cardRubric">country</span>
+          <h2 class="cardTitle">Four Pillars Decide Fate of Economy Indonesia</h2>
+          <param class="cardText">
+            The domestic economy is still faced with a number of structural
+            challenges. To achieve sustain...
+          </p>
+          <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
+          <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
+          <a href="#" class="cardFooterLink cardFooterLink-like"></a>
+        </section>
+        <section class="card cardNarrowBackgroundImg">
+          <span class="cardRubric">country</span>
+          <h3 class="cardTitle">12 photos Indonesian beauty in your eyes</h3>
+          <p class="cardText">
+            This is the reaction of many people is often asked when visiting a
+            variety...
+          </p>
+          <a href="#" class="cardFooterLink cardFooterLink-more">read more</a>
+          <a href="#" class="cardFooterLink cardFooterLink-comment">30</a>
+          <a href="#" class="cardFooterLink cardFooterLink-like"></a>
+        </section>
+        <section class="card cardNewest">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+            aperiam, consequuntur accusamus harum nesciunt repudiandae vero nulla,
+            reprehenderit adipisci, nam iure hic impedit ratione autem magnam. Quia,
+            ab? Necessitatibus, sed. Mollitia enim illo iste dolore nemo laudantium?
+            Eveniet numquam, illo, velit magni doloremque esse nihil, impedit eaque
+            harum accusamus aut officiis ducimus repellat? Perferendis non nesciunt
+            et maxime dolorum deserunt. Sapiente aperiam quidem eaque? Quibusdam
+            odit quia, quisquam quos id cum nemo, quam voluptate deserunt
+            consequuntur maxime. Accusantium, illo cupiditate. Facilis excepturi
+            omnis porro quis repellat amet, repellendus corporis vel!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+            aperiam, consequuntur accusamus harum nesciunt repudiandae vero nulla,
+            reprehenderit adipisci, nam iure hic impedit ratione autem magnam. Quia,
+            ab? Necessitatibus, sed. Mollitia enim illo iste dolore nemo laudantium?
+            Eveniet numquam, illo, velit magni doloremque esse nihil, impedit eaque
+            harum accusamus aut officiis ducimus repellat? Perferendis non nesciunt
+            et maxime dolorum deserunt. Sapiente aperiam quidem eaque? Quibusdam
+            odit quia, quisquam quos id cum nemo, quam voluptate deserunt
+            consequuntur maxime. Accusantium, illo cupiditate. Facilis excepturi
+            omnis porro quis repellat amet, repellendus corporis vel!
+          </p>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>
