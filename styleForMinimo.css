@@ -4,6 +4,7 @@
 }
 
 body {
+  position: relative;
   display: grid;
   grid-template-columns: 70% 30%;
   grid-gap: 1rem;
@@ -111,7 +112,8 @@ li {
 .commentBlockAva {
   width: 40px;
   height: 40px;
-  border-radius: 50%
+  border-radius: 50%;
+  background-image: url('https://loremflickr.com/40/40?random=3');
 }
 
 .commentField {
@@ -149,4 +151,13 @@ li {
 
 .footerPreSocial {
   margin: 0 0 0 auto;
+}
+
+.imgBig {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: auto;
 }
