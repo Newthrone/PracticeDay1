@@ -1,0 +1,73 @@
+$pageHeader-backgroundColor: $black-700;
+$pageHeaderAfter-backgroundColor: $gray-700;
+
+.pageHeader {
+  position: relative;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0 var(--pageGap);
+  background-color: $pageHeader-backgroundColor;
+
+  &:after {
+    @include tx-pseudo;
+    top: foinni-toRem(120px);
+    width: var(--pageWidth);
+    height: 1px;
+    background-color: $pageHeaderAfter-backgroundColor;
+  }
+}
+
+$logo-color: $white;
+
+.logo {
+  margin: 0 0 0 $gap;
+  font-size: foinni-toRem(40px);
+  color: $logo-color;
+}
+
+.logoPart {
+  @extend %mainEyeCatchingColor;
+}
+
+.navigationLinks {
+  display: flex;
+  margin: 1.8rem foinni-toRem(95px) 1.8rem 0;
+  list-style: none;
+}
+
+.navigationLink {
+  @extend %linkHover;
+  position: relative;
+  margin: 0 0 0 foinni-toRem(42px);
+  text-transform: uppercase;  
+  overflow: visible;  
+}
+
+.pageHero {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: foinni-toRem(680px);
+}
+
+.pageTitle {
+  @include tx-font-size(48px);
+  text-transform: capitalize;
+}
+
+.pageTitlePart {
+  @extend %mainEyeCatchingColor;
+  text-transform: uppercase;
+}
+
+.pageHeroText {
+  max-width: 980px;
+  text-align: center;
+  line-height: 2;
+  color: $white-100;
+}

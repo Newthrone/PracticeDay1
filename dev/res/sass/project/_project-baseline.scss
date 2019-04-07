@@ -1,11 +1,14 @@
 // Colors
 
-$text: $black-500;
+$text: $gray-500;
 $background: $white;
 
 $text-print: $text;
 $background-print: $background;
 
+%mainEyeCatchingColor {
+  color: $green;
+}
 
 
 // Fonts
@@ -19,8 +22,8 @@ $font-serif: $serifFontStack;
 $font-mono: $monospaceFontStack;
 
 $fontFamily: $font-sans;
-$fontSize: 16px;
-$lineHeight: 1.5;
+$fontSize: 18px;
+$lineHeight: 1.6;
 
 $fontVariants: (
   regular: regular,
@@ -63,3 +66,25 @@ $fontSizes: (
   small: $fontSize * .75,
   large: $fontSize * txf-pow($fontRatio, 4)
 );
+
+
+// Link 
+
+%linkHover  { 
+
+  &:hover {
+    &:after {      
+      position: absolute;
+      content: "";
+      display: block;
+      bottom: -10px;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $green;
+    }
+  }
+}
+
+// Indent 
+

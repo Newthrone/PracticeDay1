@@ -1,0 +1,7 @@
+.pageMainSection {
+  max-width: var(--pageWidth);
+  margin: 0 auto;
+  padding: 0 $gap;
+}
+
+@import 'main/_welcome';

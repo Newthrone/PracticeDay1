@@ -1,5 +1,10 @@
 /* Layout */
 
+:root {
+  --pageWidth: 1170px;
+  --pageGap: calc(( 100% - var(--pageWidth)) / 2);
+}
+
 // sass-lint:disable no-vendor-prefixes
 
 html {
@@ -11,10 +16,9 @@ html {
 // sass-lint:enable no-vendor-prefixes
 
 body {
-  @include tx-boundaries;
   position: relative;
-  padding: 0 $gap;
-  background: $background;
+  margin: 0;
+  background: $background; 
 }
 
 

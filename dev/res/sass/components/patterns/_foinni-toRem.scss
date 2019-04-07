@@ -1,0 +1,3 @@
+@function foinni-toRem($value) {
+  @return ($value / $fontSize) * 1rem;
+}

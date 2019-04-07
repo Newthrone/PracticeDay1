@@ -1,15 +1,17 @@
 // White
 
 $white-100: #fff;
+$white-200: #fffcf4;
 
-$white: $white-100;
+$white: $white-200;
 
 
 
 // Black
 
-$black-500: #24292e;
-$black-900: #000;
+$black-700: #1a1a1a;
+$black-900: #0b0a0a;
+
 
 $black: $black-900;
 
@@ -17,11 +19,10 @@ $black: $black-900;
 
 // Gray
 
-$gray-100: #e5e5e5;
-$gray-300: #ccc;
-$gray-500: #999;
-$gray-700: #737373;
-$gray-900: #595959;
+$gray-300: #cac8c5;
+$gray-500: #8f8e91;
+$gray-700: #454546;
+$gray-900: #434243;
 
 $gray: $gray-500;
 
@@ -78,7 +79,7 @@ $yellow: $yellow-500;
 
 $green-100: #9ff26b;
 $green-300: #77eb67;
-$green-500: #29cc5f;
+$green-500: #1dde85;
 $green-700: #39ad6f;
 $green-900: #298a73;
 
@@ -94,3 +95,4 @@ $vkColor: #507299;
 $okColor: #ee8208;
 $instagramColor: #8a3ab9;
 $youTubeColor: #e52d27;
+

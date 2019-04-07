@@ -1,7 +1,7 @@
 /* eslint no-multi-spaces: 'off' */
 
 const CONFIG = {
-  PROJECT: 'MKSKOM',                 // Project Name
+  PROJECT: 'fullMaket',                 // Project Name
   LANGUAGE: 'ru',                    // Language
   AMP: false,                        // Google AMP
   THEME: '#fd746c',                  // Theme Color

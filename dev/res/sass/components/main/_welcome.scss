@@ -1,0 +1,82 @@
+$mainTitle-color: $gray-700;
+
+.mainTitle {
+    @include tx-font-size(30px);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.mainTitlePart {
+    @extend %mainEyeCatchingColor;
+    text-transform: uppercase;
+}
+
+.mainDefinition {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.serviceList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    grid-column-gap: foinni-toRem(46px); 
+    grid-row-gap: foinni-toRem(48px); 
+    margin: foinni-toRem(80px) 0 0;
+    padding: 0;
+}
+
+.serviseListItem {   
+    grid-column: span 1;
+    margin: 0;
+    list-style: none; 
+}
+
+$serviseListLink-borderColor: $gray-300;
+$serviseListLinkHover-borderColor: $green;
+
+.serviseListLink {
+    position: relative;    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 75px 10px 0;       
+
+    &:after {
+        @include tx-pseudo;
+        top: 2px;
+        bottom: 2px;
+        left: 2px;
+        right: 2px;
+        border: 1px solid $serviseListLink-borderColor;
+    }
+
+    &:hover:after {  
+        transform: translateY(3px);
+        border: 2px solid $serviseListLinkHover-borderColor;
+    }
+}
+
+$serviceItemTitle-color: $gray-700;
+
+.serviceItemTitle {
+    margin: 0 0 foinni-toRem(12px);
+    text-transform: capitalize; 
+    color: $serviceItemTitle-color;
+
+    .serviseListLink:hover & {
+        @extend %mainEyeCatchingColor;
+    }
+}
+
+$serviceItemText-color: $gray-500;
+$serviceItemTextHover-color: $gray-700;
+
+.serviceItemText {
+    color: $serviceItemText-color;
+    text-align: center;
+
+    .serviseListLink:hover & {
+        color: $serviceItemTextHover-color;
+    }    
+}
